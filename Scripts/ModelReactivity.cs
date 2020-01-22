@@ -16,5 +16,6 @@ public class ModelReactivity : MonoBehaviour
     void Update()
     {
         transform.localScale = new Vector3(transform.localScale.x, (AudioAnalysis._freqBands[_band] * _scaleMultiplier) + _startScale, transform.localScale.z);
+        Debug.Log(AudioAnalysis._freqBands[_band]);
     }
 }
